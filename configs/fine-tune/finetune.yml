@@ -1,0 +1,33 @@
+dataset_args:
+  dataset_path: enron_phone   # Other choices: echr_year, enron_email
+  setting: perturb            # Other choices: noperturb, minority
+  dataset_mode: undefended
+  sample_duplication_rate: 1
+
+trainer_args:
+  save_steps: 1000
+  callback_after_n_steps: 1000
+  num_train_epochs: 5
+  gradient_accumulation_steps: 8
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+
+# Uncomment if noisy training is required
+# privacy_args:
+#   target_epsilon: 8
+#   max_grad_norm_dp: 1
+#   noise_multiplier: 0.0005
+#   no_accountant: True
+
+model_args:
+  architecture: gpt2
+  pre_trained: True   # Start from a pre-trained checkpoint
+
+ner_args:
+  ner: flair
+  ner_model: flair/ner-english-ontonotes-large
+  anon_token: <MASK>
+  anonymize: False
+
+outdir_args:
+  # custom_output_dir: # Customize the output directory if necessary

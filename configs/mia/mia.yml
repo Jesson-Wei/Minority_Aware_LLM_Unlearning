@@ -1,0 +1,18 @@
+model_args:
+  architecture: gpt2
+  pre_trained: True
+  # Specify the model checkpoint path for conducting MIA
+  # model_ckpt: ...
+  peft: none
+
+mia_attack_args:
+  attack_name: loss #Other MIA attacks: zlib, min_k
+  seed: 42          # Random seed.
+
+min_k_args:
+  k: 0.2
+  window: 1
+  stride: 1
+
+env_args:
+  num_threads: 48
