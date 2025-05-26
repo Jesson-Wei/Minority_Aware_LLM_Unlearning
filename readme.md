@@ -1,5 +1,5 @@
 
-# Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning
+# ICML'25 Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning
 
 This is the codebase for our Project "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning". The project involves fine-tuning models on three datasets and evaluating their vulnerability to membership inference attacks (MIA). Below, we outline the setup, dataset generation, key hyperparameters, and running instructions for fine-tuning and unlearning experiments.
 
