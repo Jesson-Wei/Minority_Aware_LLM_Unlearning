@@ -69,4 +69,15 @@ python evaluation.py --config_path ../configs/mia/mia.yml
 
 This will calculate the evaluation metrics to assess the model's vulnerability to MIA.
 
+## Reference
+
+If you find our paper and repo useful, please cite our paper:
+```bibtex
+@article{wei2024underestimated,
+  title={Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning},
+  author={Wei, Rongzhe and Li, Mufei and Ghassemi, Mohsen and Krea{\v{c}}i{\'c}, Eleonora and Li, Yifan and Yue, Xiang and Li, Bo and Potluru, Vamsi K and Li, Pan and Chien, Eli},
+  journal={International Conference on Machine Learning},
+  year={2025}
+}
+```
 ---
